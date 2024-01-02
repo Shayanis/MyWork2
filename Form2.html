@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Job Registration Form</title>
+  </head>
+  <body>
+    <marquee>SHAYAN CHEMICALS LTD. OFFICIAL WEBSITE</marquee>
+    <h1>Job Registration Form</h1>
+    <h3>ALL FACULTIES AVAILABLE</h3>
+    <form
+      action="https://www.google.com"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required /><br /><br />
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Desired Salary Range</legend>
+        <label for="salary_min">Minimum:</label>
+        <input type="number" id="salary_min" name="salary_min" /><br /><br />
+
+        <label for="salary_max">Maximum:</label>
+        <input type="number" id="salary_max" name="salary_max" /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Resume Upload</legend>
+        <input
+          type="file"
+          id="resume"
+          name="resume"
+          accept=".pdf,.doc,.docx"
+        /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Availability</legend>
+        <label for="available_date">Available Start Date:</label>
+        <input
+          type="date"
+          id="available_date"
+          name="available_date"
+        /><br /><br />
+      </fieldset>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </body>
+</html>
