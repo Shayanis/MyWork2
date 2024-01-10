@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        font-size: 16px;
+        color: #333;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+
+      caption {
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        border: 2px solid #3498db;
+      }
+
+      th,
+      td {
+        height: 30px; 
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 12px;
+      }
+
+      th {
+        background: linear-gradient(to right, #3498db, #2980b9);
+        color: #fff;
+      }
+
+      .color-cell {
+        height: 30px;
+      }
+
+      .acidic {
+        background-color: #e74c3c;
+      }
+
+      .neutral {
+        background-color: #95a5a6;
+      }
+
+      .alkaline {
+        background-color: #2ecc71;
+      }
+
+      .info-color {
+        background-color: var(--color);
+      }
+
+      .info-color:hover {
+        background-color: #ecf0f1;
+      }
+
+      @media only screen and (max-width: 600px) {
+        table {
+          width: 100%;
+        }
+      }
+    </style>
+    <title>pH Color Table</title>
+  </head>
+  <body>
+    <h1>pH Color Table</h1>
+
+    <!-- Color Table -->
+    <table>
+      <caption>
+        pH Color Classification
+      </caption>
+      <thead>
+        <tr>
+          <th>pH Range</th>
+          <th>Color</th>
+          <th>Classification</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0-2</td>
+          <td class="color-cell acidic" alt="Strongly Acidic"></td>
+          <td>Strongly Acidic</td>
+        </tr>
+        <tr>
+          <td>2-3</td>
+          <td
+            class="color-cell info-color"
+            style="--color: #d35400"
+            alt="Moderately Acidic"
+          ></td>
+          <td>Moderately Acidic</td>
+        </tr>
+        <tr>
+          <td>3-4</td>
+          <td
+            class="color-cell info-color"
+            style="--color: #8e44ad"
+            alt="Mildly Acidic"
+          ></td>
+          <td>Mildly Acidic</td>
+        </tr>
+        <tr>
+          <td>4-5</td>
+          <td
+            class="color-cell info-color"
+            style="--color: #3498db"
+            alt="Weakly Acidic"
+          ></td>
+          <td>Weakly Acidic</td>
+        </tr>
+        <tr>
+          <td>5-6</td>
+          <td
+            class="color-cell info-color"
+            style="--color: #1abc9c"
+            alt="Weakly Acidic"
+          ></td>
+          <td>Weakly Acidic</td>
+        </tr>
+        <tr>
+          <td>6-7</td>
+          <td class="color-cell neutral" alt="Neutral"></td>
+          <td>Neutral</td>
+        </tr>
+        <tr>
+          <td>7-8</td>
+          <td
+            class="color-cell info-color"
+            style="--color: #c0392b"
+            alt="Weakly Alkaline"
+          ></td>
+          <td>Weakly Alkaline</td>
+        </tr>
+        <tr>
+          <td>8-9</td>
+          <td
+            class="color-cell info-color"
+            style="--color: #27ae60"
+            alt="Weakly Alkaline"
+          ></td>
+          <td>Weakly Alkaline</td>
+        </tr>
+        <tr>
+          <td>9-10</td>
+          <td
+            class="color-cell info-color"
+            style="--color: #d35400"
+            alt="Mildly Alkaline"
+          ></td>
+          <td>Mildly Alkaline</td>
+        </tr>
+        <tr>
+          <td>10-11</td>
+          <td
+            class="color-cell info-color"
+            style="--color: #34495e"
+            alt="Moderately Alkaline"
+          ></td>
+          <td>Moderately Alkaline</td>
+        </tr>
+        <tr>
+          <td>11-12</td>
+          <td class="color-cell alkaline" alt="Strongly Alkaline"></td>
+          <td>Strongly Alkaline</td>
+        </tr>
+        <tr>
+          <td>12-13</td>
+          <td
+            class="color-cell info-color"
+            style="--color: #f39c12"
+            alt="Strongly Alkaline"
+          ></td>
+          <td>Strongly Alkaline</td>
+        </tr>
+        <tr>
+          <td>13-14</td>
+          <td
+            class="color-cell info-color"
+            style="--color: #16a085"
+            alt="Strongly Alkaline"
+          ></td>
+          <td>Strongly Alkaline</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
