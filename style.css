@@ -1,0 +1,74 @@
+/* Resetting some default margin and padding for better consistency */
+body,
+h2,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+div {
+  background-color: #ffffff;
+  border: 4px double #000;
+  max-width: 100%;
+  min-height: 100vh; /* Changed from height to min-height for better responsiveness */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 30px; /* Adjusted padding for better spacing */
+  margin: 0 auto;
+}
+
+/* Heading styles */
+h2 {
+  margin: 15px auto 20px auto;
+  width: 100%; /* Adjusted width for better responsiveness */
+}
+
+/* Navigation styles */
+ul {
+  width: 100%; /* Adjusted width for better responsiveness */
+  padding: 15px 0; /* Adjusted padding for better spacing */
+  text-align: center;
+  border-top: 3px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+li {
+  margin: 6px 9px;
+  display: inline-block; /* Changed from inline to inline-block for better spacing */
+}
+
+a {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 18px 5px 18px;
+  transition: color 0.3s; /* Added transition for hover effect */
+}
+
+a:hover {
+  color: #666; /* Change the color to a darker shade on hover */
+}
+
+/* Paragraph styles */
+p {
+  text-align: center;
+  max-width: 100%; /* Adjusted max-width for better responsiveness */
+  margin: 20px auto;
+  font-size: 1.2em; /* Adjusted font size for better readability */
+  line-height: 1.5;
+}
+/* Heading styles */
+h2 {
+  margin: 15px auto 20px auto;
+  width: 100%; /* Adjusted width for better responsiveness */
+  text-align: center; /* Center the content horizontally */
+}
+
+h2 img {
+  display: block; /* Ensure the image is a block element for margin auto to work */
+  margin: 0 auto; /* Center the image horizontally */
+  width: 300px;
+  height: auto;
+}
